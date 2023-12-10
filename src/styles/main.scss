@@ -1,0 +1,36 @@
+
+@use './vendor-openProps';
+@use './utility';
+
+
+
+body {
+  margin: 0;
+}
+
+#theVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+#playPause {
+  font-size: var(--font-size-fluid-1);
+  color: var(--stone-1); 
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+#playPause:hover {
+  color: var(--green-1);
+}
