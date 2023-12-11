@@ -4,11 +4,8 @@
 
 
 
-body {
-  margin: 0;
-}
-
-#theVideo {
+/// The video played in fullscreen
+#theBackground {
   object-fit: cover;
   position: fixed;
   top: 0;
@@ -17,6 +14,7 @@ body {
   min-height: 100%;
 }
 
+/// The sticky footer at the bottom (holding the Button)
 .footer {
   position: fixed;
   bottom: 0;
@@ -24,14 +22,15 @@ body {
   padding: 20px;
 }
 
+/// The button to play/pause the Video Background
 #playPause {
   font-size: var(--font-size-fluid-1);
   color: var(--stone-1); 
   background: transparent;
   border: 0;
   cursor: pointer;
-}
-
-#playPause:hover {
-  color: var(--green-1);
+  
+  &:hover {
+    color: var(--green-1);
+  }
 }
