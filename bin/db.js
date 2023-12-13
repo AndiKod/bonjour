@@ -7,7 +7,7 @@ const fm = require('html-frontmatter');
 const files = [];
 
 dirTree('./public', {extensions:/.html$/}, (item, PATH, stats) => {
-  let path = __dirname +'../../'+ PATH;
+  let path = PATH;
   let content = fm(fs.readFileSync(path, 'utf-8'));
   files.push(content);
 });
