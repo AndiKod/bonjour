@@ -1,6 +1,26 @@
 /// CSS for the Footer
 
-.date {
-  font-family: var(--font-sans);
-  font-size: var(--font-size-fluid-0);
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
 }
+
+
+#playPause {
+  font-size: var(--font-size-fluid-1);
+  color: var(--stone-1); 
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  
+  &:hover {
+    color: var(--green-1);
+  }
+}
+
+  .date {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-fluid-0);
+  }
